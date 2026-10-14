@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Amiibo</title>
+</head>
+<body>
+    <header class="header-banner">
+        <h1 class="display-5 fw-bold text-dark drop-shadow">Amiibo Collection</h1>
+    </header>
+    <nav class="navbar navbar-expand-md navbar-light barcolor border-bottom shadow-sm">
+    <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1 fs-6 fw-bold text-secondary text-uppercase ms-2">
+        🔍 Filtros de Búsqueda
+    </span>
+    <div class="d-flex flex-row align-items-center gap-2 me-2">
+    <button type="button" class="btn btn-primary fw-bold text-nowrap" id="Completa">
+        ✨ Lista Completa
+    </button>
+        <select id="Filtro1" class="form-select border-2" style="min-width: 200px;">
+        <option value="">-- Elige una Serie --</option>
+        <option value="Super Mario">Super Mario</option>
+        <option value="The Legend of Zelda">Zelda Series</option>
+        <option value="Pokemon">Pokémon</option>
+        <option value="Animal Crossing">Animal Crossing</option>
+        <option value="Metroid">Metroid</option>
+        <option value="Splatoon">Splatoon</option>
+        </select>
+        <select id="Filtro2" class="form-select border-2" style="min-width: 200px;">
+            <option value="">-- Elige un Personaje --</option>
+            <option value="Mario">Mario</option>
+            <option value="Link">Link</option>
+            <option value="Pikachu">Pikachu</option>
+            <option value="Samus">Samus</option>
+            <option value="Donkey Kong">Donkey Kong</option>
+            <option value="Yoshi">Yoshi</option>
+        </select>
+        </div>
+    </div>
+</nav>        <!-- Sección donde aparecerán los Amiibos cargados -->
+        <section id="amiiboSection">
+            <!-- Renderizado dinámico desde script.js -->
+        </section>
+    </main>
+    <script src="/assets/script.js"></script>
+</body>
+</html>
